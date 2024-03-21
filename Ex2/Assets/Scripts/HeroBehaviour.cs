@@ -44,7 +44,7 @@ public class HeroBehaviour : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
             {
-                speed += Input.GetAxis("Vertical") * 0.05f;
+                speed += Input.GetAxis("Vertical") * 0.1f;
             }
             transform.Translate(speed * Time.deltaTime * Vector3.up);
         }
