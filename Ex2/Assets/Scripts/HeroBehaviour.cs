@@ -46,7 +46,7 @@ public class HeroBehaviour : MonoBehaviour
             {
                 speed += Input.GetAxis("Vertical") * 0.05f;
             }
-            transform.Translate(Vector3.up * speed * Time.deltaTime);
+            transform.Translate(speed * Time.deltaTime * Vector3.up);
         }
 
         // spawn egg
