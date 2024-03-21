@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// Generates a new enemy object at a random position within the world bounds. Updates the enemy count.
     /// </summary>
-    void GenerateEnemy()
+    public void GenerateEnemy()
     {
         GameObject enemy = Instantiate(Resources.Load("Prefabs/Plane"),
             new Vector3(Random.Range(worldBound.min.x * 0.9f, worldBound.max.x * 0.9f),

@@ -41,6 +41,7 @@ public class PlaneBehaviour : MonoBehaviour
     {
         GameManager gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         gm.touchedEnemy++;
+        gm.GenerateEnemy();
         Destroy(gameObject);
     }
 }
